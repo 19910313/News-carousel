@@ -1,0 +1,105 @@
+a {
+  text-decoration: none;
+}
+.news {
+  width: 90%;
+  margin: 5% auto;
+  font-family: Arial;
+}
+.news__title {
+  margin: 1%;
+  padding: 0.5em 5%;
+  font-size: 40px;
+  color: #667;
+}
+.news__carousel {
+  margin: 1%;
+  font-size: 0;
+}
+.news__carousel ::-webkit-scrollbar {
+  display: none;
+}
+.news__carousel .arrow {
+  display: block;
+  border: 1px solid #999;
+  width: 3em;
+  height: 3em;
+  text-align: center;
+  line-height: 3em;
+  border-radius: 100%;
+  transform: translateX(1px) translateY(-2px);
+  background-color: white;
+  box-shadow: 0 0 2px 2px #ccc;
+  color: #666;
+}
+.news__carousel .arrow:hover {
+  cursor: pointer;
+  box-shadow: inset 3em 0 0 0 rgb(219, 219, 227);
+}
+.carousel__first {
+  width: 5%;
+  /* display: inline-block; */
+  font-size: 20px;
+  box-sizing: border-box;
+}
+.carousel__content {
+  width: 90%;
+  height: 480px;
+  /* border: 1px solid red; */
+  /* display: inline-block; */
+  font-size: 20px;
+  box-sizing: border-box;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+}
+.carousel__last {
+  width: 5%;
+  /* display: inline-block; */
+  font-size: 20px;
+  box-sizing: border-box;
+}
+.content__wrapper {
+  /* border: 1px dotted darkgreen; */
+  width: 100%;
+  font-size: 0;
+}
+/* article styles */
+.content__article {
+  display: inline-block;
+  width: 100%;
+  border: 1px solid #999;
+  box-sizing: border-box;
+  font-size: 20px;
+  border-radius: 15px;
+  margin-bottom: 2%;
+  scroll-snap-align: start;
+  /* scroll-behavior: smooth; */
+}
+.article__image {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 15px 15px 0 0;
+}
+.fig {
+  width: 247px;
+  height: 290px;
+  display: inline-block;
+  margin: 5px;
+  border-radius: 0%;
+}
+.article__title {
+  font-size: 25px;
+  font-weight: bold;
+  padding: 0.5em 3%;
+  height: 3em;
+}
+.article__title a {
+  color: #223;
+}
+.article__date {
+  padding: 2em 3% 0.5em 3%;
+  color: #889;
+}
+/* HW4 Cu << em >>, unitatea se calculeaza de la dimensiunea fontului elementului sau parinte, in timp ce unitatea << rem >> este calculata de la dimensiunea fontului radacina a documentului HTML. */

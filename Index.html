@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>New Carousel | CSS</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <section class="news">
+      <h1 class="title news__title">Latest News</h1>
+      <div class="news__carousel">
+        <div class="carousel__first">
+          <a class="arrow carousel__prev" href="#a-1">▲</a>
+        </div>
+        <div class="carousel__content">
+          <div class="content__wrapper">
+            <article id="a-1" class="content__article">
+              <img class="article__image" src="187-400x300.jpg" alt="" />
+              <h2 class="article__title">
+                <a href="#">Short Article 1 Title</a>
+              </h2>
+              <p class="article__date">3 hours ago</p>
+            </article>
+            <article id="a-2" class="content__article">
+              <figure>
+                <img class="article__image fig" src="973-300x400.jpg" alt="" />
+                <img class="article__image fig" src="1016-400x300.jpg" alt="" />
+                <h2 class="article__title">
+                  <a href="#">
+                    <figcaption>
+                      Long Article 2. Lorem ipsum dolor sit amet consectetur
+                      adipisic. Originals by
+                      <a href="https://picsum.photos/">
+                        <span style="color: brown">Lorem ipsum</span>
+                      </a>
+                    </figcaption>
+                  </a>
+                </h2>
+              </figure>
+              <p class="article__date">7 hours ago</p>
+            </article>
+          </div>
+        </div>
+        <div class="carousel__last">
+          <a class="arrow carousel__next" href="#a-2">▼</a>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
